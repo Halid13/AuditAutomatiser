@@ -1,9 +1,4 @@
-Super, je te fais une version **propre + lisible + stylée**, avec **emojis élégants** (pas trop, juste pour donner du charme ✨).
-Toujours claire, pro, mais plus agréable à lire.
-
----
-
-# 🧾 Audit des comptes utilisateurs inactifs — `User_Audit.ps1`
+# 🧾 Audit des utilisateurs inactifs — `User_Audit.ps1`
 
 Ce script PowerShell analyse un fichier CSV d'utilisateurs pour identifier les **comptes actifs** qui **ne se sont pas connectés depuis un certain nombre de jours**.
 Il exporte ces comptes dans un fichier et affiche un résumé clair en console.
@@ -74,14 +69,4 @@ Doe John,jdoe,IT,TRUE,2025-01-12
 
 ---
 
-## 🚀 Améliorations possibles
-
-* Support de plusieurs formats de date
-* Gestion souple du champ `Enabled` (`true/false`, `1/0`, etc.)
-* Paramètre `-OutFile` pour choisir le nom du fichier exporté
-* Tests automatisés (Pester) pour valider le comportement
-
----
-
 **Auteur :** Halid13
-
