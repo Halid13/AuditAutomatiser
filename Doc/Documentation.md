@@ -20,12 +20,12 @@ Ci-dessous, j'explique chaque section / ligne importante du script fourni.
 ```powershell
 param(
     [int]$Days = 10,
-    [string]$Path = "Test Technique/pwsh_dataset.csv"
+    [string]$Path = "Chemin\Vers\Votre\Fichier.csv"
 )
 ```
 - `param(...)` : définit les paramètres acceptés par le script quand on l'appelle.
   - `[int]$Days = 10` : paramètre entier `Days` avec valeur par défaut 10 (seuil en jours d'inactivité).
-  - `[string]$Path = "Test Technique/pwsh_dataset.csv"` : chemin par défaut vers le fichier CSV d'entrée.
+  - `[string]$Path = "Chemin\Vers\Votre\Fichier.csv"` : chemin par défaut vers le fichier CSV d'entrée.
 
 ```powershell
 if (-not (Test-Path $Path)) {
@@ -122,12 +122,6 @@ Write-Output "Departments concerned: $deptList"
 - Tests unitaires Pester : automatiser la validation (CSV avec dates valides/invalides, Enabled variés, fichiers manquants).
 - Logging plus structuré : écrire un log détaillé avec timestamps ou utiliser `Write-Verbose`/`Write-Information` et `-Verbose` pour mode verbeux.
 
-## Fichiers ajoutés
-- `Doc/Documentation.md` (ce fichier) : description du projet et explication détaillée du script.
-
 ---
 
-Si tu veux, je peux :
-- Ajouter un paramètre `-OutFile` et implémenter la gestion améliorée de `Enabled` et des dates.
-- Mettre à jour le `README.md` racine pour pointer sur `Doc/Documentation.md`.
-- Générer un fichier `pwsh_dataset.csv` d'exemple si tu souhaites des tests rapides.
+**Auteur :** Halid13
